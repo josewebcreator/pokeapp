@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.App{
+  
+  background: repeating-linear-gradient(
+    0deg,
+    #556B2F 10px,
+    #556B2F 20px,
+    #7BA273 20px,
+    #7BA273 30px
+  );
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
