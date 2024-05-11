@@ -1,0 +1,52 @@
+.Pokedata{
+  width: 400px;
+  height: 500px;
+  position: relative;
+  left: 10px;
+  top: 7%;
+  display: block;
+}
+
+.pokedata--name{
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  text-decoration: underline solid 5px;
+}
+
+.pokedata--stats{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  
+}
+
+.pokedata--stats ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+  padding-top: 20px;
+}
+
+.pokedata--stats ul li{
+  width: 100%;
+  display: flex;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  
+}
+
+.stat-name{
+  width: 80%;
+}
+
+.stat-value{
+  width: 10%;
+}
+
