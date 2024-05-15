@@ -13,6 +13,11 @@ export default function storeReducer (state,action) {
         ...state,
         selection : action.payload
       }
+    case actionTypes.CHANGE_LIST:
+      return{
+        ...state,
+        limit : action.payload
+      }
 
     default:
       return state;

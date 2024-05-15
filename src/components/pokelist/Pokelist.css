@@ -26,3 +26,22 @@
   top: -10%;
 }
 
+.arrow{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/arrow.png');
+  background-size: 100%;
+
+}
+
+.prev--arrow{
+  top: -6%;
+  left: 45%;
+  transform: rotate(180deg);
+}
+
+.post--arrow{
+  top: 95%;
+  left: 45%;
+}
