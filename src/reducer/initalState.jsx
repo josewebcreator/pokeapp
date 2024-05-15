@@ -1,5 +1,5 @@
 const initialState = {
-  selection : {id : 25, name : "pikachu"},
+  selection : {id : 1, name : "bulbasaur", url : "https://pokeapi.co/api/v2/pokemon/1/"},
   limit : 10
 }
 

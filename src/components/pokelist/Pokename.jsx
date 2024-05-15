@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { StoreContext } from '../../context/provider';
+import actionTypes from '../../reducer/actionTypes';
 
 export default function Pokename({id, name, url}){
   
   const pokeball = require('../../assets/poke-ball.png');
+
+  const [store, dispatch] = useContext(StoreContext);
 
   function getIdDigits(id){
     const k = Math.floor(id / 1000);
@@ -12,8 +17,17 @@ export default function Pokename({id, name, url}){
     return `${k}${h}${d}${u}`
   }
 
+  function selectPokemon(id, name){
+    dispatch(
+      {
+        type : actionTypes.SELECT_POKEMON,
+        payload : {id : id, name : name, url : url}
+      }
+    )
+  }
+
   return (
-    <div className="Pokename">
+    <div className="Pokename" onClick={()=>selectPokemon(id,name)}>
      <img className='poke-ball' src={pokeball} alt="pokeball" /> {getIdDigits(id)} {name} 
     </div>
   )
