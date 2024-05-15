@@ -29,7 +29,7 @@ export default function Pokelist (){
   },[store]);
 
   function changeLimit(sum){
-    if((store+sum)<0){
+    if((store.limit+sum)<=0){
       alert("List can not be negative :(");
     }else{
       dispatch({
